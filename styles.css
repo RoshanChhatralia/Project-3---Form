@@ -30,7 +30,6 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    width:auto;
     align-items: center;
 }
 
@@ -41,18 +40,35 @@ header p {
     margin: auto;
 }
 
-.signupform, .form, .form fieldset {
+.form {
     display: flex;
     flex-direction: column;
+    width: 80%;
 }
 
-H1 {
+fieldset {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin: auto;
+}
+
+.combo {
+    display: flex;
+    flex-direction: column;    
+}
+
+h1 {
     background-color: rgb(42, 42, 61);
     color:white;
     margin: 0;
     padding: 30px 0;
     text-transform: uppercase;
     font-size: 1.5rem;
+}
+
+fieldset>h2 {
+    font-size: 1.2rem;
 }
 
 footer {
@@ -64,6 +80,10 @@ footer {
 
 fieldset {
     border: none;
+}
+
+fieldset p {
+    margin: 3px;
 }
 
 label {
@@ -82,6 +102,7 @@ textarea {
     height: 5rem;
     border:none;
     margin-top: 10px;
+    width: 100%;
 }
 
 button {
@@ -102,13 +123,58 @@ button {
     font-style: italic;
 }
 
-select{
-    font-style: italic;
+
+select {
     border: none;
+    color: gray;
     background-color: rgb(237, 237, 237);
-    height:1.5rem;
+    padding: 10px;
+    margin: 5px 0;
+    height:2.5rem;
+}
+
+#zip {
+    width: 50%;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    height: 1rem;
+    margin-right: 5px;
+}
+
+hr {
+    width: 80vw;
+    margin:auto;
+}
+
+.combo2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:100%;
+}
+
+input:focus, textarea:focus, select:focus {
+    background: aquamarine;
+}
+
+#newslettersection {
+    background: rgb(170, 153, 40);
 }
 
 @media (min-width: 768px) {
 
+.combo {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+  }
+
+  .combo label{
+    width:20%;
+  }
+
+  .combo input{
+    width:80%;
+  }
 }
